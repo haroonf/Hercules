@@ -57,6 +57,7 @@ exports.deleteRoutine = function deleteRoutine(req, res) {
         if(err || !routine) {
           res.send('Routine not deleted\n')
         } else {
+          debug('deleteRoutine Routine.deleteOne successful')
           res
             .status(200)
             .json({message: 'Routine deleted'})
