@@ -19,9 +19,7 @@ app.use(bodyParser.urlencoded({
 }))
 
 const routineRoute = require('./routes/routineRouter')
-const mealRoute = require('./routes/mealRouter')
 
 app.use('/routine', routineRoute)
-app.use('/meal', mealRoute)
 
 module.exports = app
